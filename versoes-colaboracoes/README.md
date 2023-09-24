@@ -22,3 +22,4 @@ Para começar a usar o Git, você precisa instalá-lo no seu computador.
 - **`git branch`**: Lista todas as branches no repositório.
 - **`git checkout`**: Muda para uma branch específica.
 - **`git merge`**: Combina alterações de uma branch em outra.
+- **`git clone`**: Clona um repositório Git existente para o seu computador.
