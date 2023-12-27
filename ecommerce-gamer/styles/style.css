@@ -1,0 +1,94 @@
+.produto-destaque img {
+    width: 100%;
+}
+
+.categorias,
+.novidades,
+.produto-destaque,
+.mais-vendidos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+    max-width: 100vw;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.categoria {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.produto-destaque {
+    margin: 0;
+}
+
+.categoria img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #dddddd8f;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.novidade, .mais-vendido {
+    margin: 10px;
+    max-width: 100vw;
+    background-color: #dddddd27;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.produto-img {
+    height: 200px;
+    width: 100%;
+    /* Adicionado max-width para manter a proporção da imagem */
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.add-botao {
+    width: 20px;
+    position: absolute;
+    top: 0; 
+    right: 0; /* Alinha à direita */
+    margin: 18px; /* Adicione margem conforme desejado */
+}
+
+.avaliacoes {
+    width: 120px;
+}
+
+.gy-2 {
+    display: block;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

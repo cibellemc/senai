@@ -3,146 +3,181 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="descripion" content="Codificação Front-End SENAI">
-    <meta name="keywords" content="HTML, CSS, JavaScript, SENAI">
-    <meta name="author" content="Cibelle Maciel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce gammer</title>
 
-    <title>Ecommerce gamer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
 
-    <header>
-        <p>LOGO</p>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Egammer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Departamentos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Periféricos</a></li>
+                                <li><a class="dropdown-item" href="#">Hardware</a></li>
+                                <li><a class="dropdown-item" href="#">Celulares </a> </li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Monte seu PC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
 
-        <nav id="menu">
-            <a href="#" target="_blank">HOME</a>
-            <a href="#" target="_blank">DEPARTAMENTOS</a>
-            <a href="#" target="_blank">MONTE SEU PC</a>
-            <a href="#" target="_blank">CONTATO</a>
-        </nav>
-
-        <nav id="acoes-usuario">
-            <a href="#" target="_blank">
-                <img src="./assets/imageedit_6_9729347579.png" alt="">
-            </a>
-            <a href="#" target="_blank">
-                <img src="./assets/imageedit_5_9889541437.png" alt="">
-            </a>
-            <a href="#" target="_blank">
-                <img src="./assets/imageedit_8_8700532790.png" alt="">
-            </a>
+                    <div class="row gy-2 gx-3 align-items-center">
+                        <i class="fa-solid fa-magnifying-glass col-auto" style="color: white;"></i>
+                        <a href="./login.html"><i class="fa-solid fa-user col-auto" style="color: white;"></i></a>
+                        <i class="fa-solid fa-cart-shopping col-auto" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section>
-
-        <article class="produto-destaque">
-            <h1>HEADPHONE TECH TOCK</h1>
-            <img src="./assets/head-removebg-preview.png" alt="imagem de um headphone">
-            <button>Compre agora</button>
-        </article>
-    </section>
-
     <main>
-        <article class="categorias">
+        <section class="produto-destaque bg-dark">
+            <img class="produto-destaque" src="./assets/Produto destaque.png" alt="">
+            <h1 style="color: #ffffff;">HEADPHONE TECHTOK</h1>
+            <button>Compre agora</button>
+            <div class="redes-sociais">
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+            </div>
+        </section>
+
+
+        <section class="categorias">
             <div class="categoria">
-                <img src="./assets/pexels-math-331684.jpg" alt="">
-                <div class="titulo-categoria">
-                    NOTEBOOK
-                </div>
+                <h6 class="title">NOTEBOOKS</h6>
+                <img src="./assets/notebook.png" alt="">
             </div>
 
             <div class="categoria">
-                <img src="./assets/pexels-jess-bailey-designs-788946.jpg" alt="">
-                <div class="titulo-categoria">
-                    CELULARES
-                </div>
+                <h6 class="title">CELULARES</h6>
+                <img src="./assets/celular.png" alt="">
             </div>
 
             <div class="categoria">
-                <img src="./assets/pexels-cottonbro-studio-3945673.jpg" alt="">
-                <div class="titulo-categoria">
-                    JOGOS
-                </div>
+                <h6 class="title">JOGOS</h6>
+                <img src="./assets/video-game.png" alt="">
             </div>
-        </article>
+        </section>
 
-        <article class="novidades">
-            <h3>Novidades</h3>
-            <div class="produto">
-                <img src="./assets/pexels-talha-irshad-5241055-removebg-preview.png" alt="">
 
-                <div class="info-produto">
-                    <div class="botao-adicionar"></div>
-                    <div class="avaliacao">5star</div>
-                    <div class="nome-produto">MOUSE</div>
-                    <div class="preco">R$25,00</div>
-                </div>
-            </div>
+        <section class="novidades">
+            <h4 class="section">NOVIDADES</h4>
 
-            <div class="produto">
-                <img src="./assets/pexels-anna-nekrashevich-8534239-removebg-preview.png" alt="">
+            <div class="novidade">
+                <img class="add-botao" src="assets/add-botao.png" alt="">
+                <img class="produto-img" src="./assets/mouse.png" alt="">
+                <img class="avaliacoes" src="./assets/avaliacoes.png" alt="">
 
-                <div class="info-produto">
-                    <div class="botao-adicionar"></div>
-                    <div class="avaliacao">5star</div>
-                    <div class="nome-produto">TABLET</div>
-                    <div class="preco">R$25,00</div>
+                <div class="informacoes">
+                    <h6>TABLET</h6>
+                    <h6>R$ 25,00</h6>
                 </div>
             </div>
 
-            <div class="produto">
-                <img src="./assets/pexels-olena-bohovyk-1772123-removebg-preview.png" alt="">
+            <div class="novidade">
+                <img class="add-botao" src="assets/add-botao.png" alt="">
+                <img class="produto-img" src="./assets/tablet.png" alt="">
+                <img class="avaliacoes" src="./assets/avaliacoes.png" alt="">
 
-                <div class="info-produto">
-                    <div class="botao-adicionar"></div>
-                    <div class="avaliacao">5star</div>
-                    <div class="nome-produto">TECLADO</div>
-                    <div class="preco">R$25,00</div>
-                </div>
-            </div>
-        </article>
-
-        <article class="mais-vendidos">
-            <h3>Mais vendidos</h3>
-            <div class="produto">
-                <img src="./assets/pexels-talha-irshad-5241055-removebg-preview.png" alt="">
-
-                <div class="info-produto">
-                    <div class="botao-adicionar"></div>
-                    <div class="avaliacao">5star</div>
-                    <div class="nome-produto">MOUSE</div>
-                    <div class="preco">R$25,00</div>
+                <div class="informacoes">
+                    <h6>TABLET</h6>
+                    <h6>R$ 25,00</h6>
                 </div>
             </div>
 
-            <div class="produto">
-                <img src="./assets/pexels-anna-nekrashevich-8534239-removebg-preview.png" alt="">
+            <div class="novidade">
+                <img class="add-botao" src="assets/add-botao.png" alt="">
+                <img class="produto-img" src="./assets/teclado.png" alt="">
+                <img class="avaliacoes" src="./assets/avaliacoes.png" alt="">
 
-                <div class="info-produto">
-                    <div class="botao-adicionar"></div>
-                    <div class="avaliacao">5star</div>
-                    <div class="nome-produto">TABLET</div>
-                    <div class="preco">R$25,00</div>
+                <div class="informacoes">
+                    <h6>TABLET</h6>
+                    <h6>R$ 25,00</h6>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mais-vendidos">
+            <h4 class="section">MAIS VENDIDOS</h4>
+            <div class="mais-vendido">
+                <img class="add-botao" src="assets/add-botao.png" alt="">
+                <img class="produto-img" src="./assets/mouse.png" alt="">
+                <img class="avaliacoes" src="./assets/avaliacoes.png" alt="">
+
+                <div class="informacoes">
+                    <h6>TABLET</h6>
+                    <h6>R$ 25,00</h6>
                 </div>
             </div>
 
-            <div class="produto">
-                <img src="./assets/pexels-olena-bohovyk-1772123-removebg-preview.png" alt="">
+            <div class="mais-vendido">
+                <img class="add-botao" src="assets/add-botao.png" alt="">
+                <img class="produto-img" src="./assets/tablet.png" alt="">
+                <img class="avaliacoes" src="./assets/avaliacoes.png" alt="">
 
-                <div class="info-produto">
-                    <div class="botao-adicionar"></div>
-                    <div class="avaliacao">5star</div>
-                    <div class="nome-produto">TECLADO</div>
-                    <div class="preco">R$25,00</div>
+                <div class="informacoes">
+                    <h6>TABLET</h6>
+                    <h6>R$ 25,00</h6>
                 </div>
             </div>
-        </article>
+
+            <div class="mais-vendido">
+                <img class="add-botao" src="assets/add-botao.png" alt="">
+                <img class="produto-img" src="./assets/teclado.png" alt="">
+                <img class="avaliacoes" src="./assets/avaliacoes.png" alt="">
+
+                <div class="informacoes">
+                    <h6>TABLET</h6>
+                    <h6>R$ 25,00</h6>
+                </div>
+        </section>
+
+        <!-- <button id="voltar-topo" type="button" class="btn btn-outlineprimary" onclick="topo()">&uarr; Voltar ao topo</button> -->
     </main>
 
-    <footer></footer>
+    <footer>
+        Institucional
+    </footer>
+    
+    <script src="scripts/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
