@@ -21,7 +21,7 @@ function login() {
     var senha = document.getElementById('senha').value;
     senha = senha.toLowerCase();
     if (usuario == "admin" && senha == "123456") {
-        window.location = "index.html";
+        window.location = "home.html";
         logado = 1;
     }
     if (logado == 0) {
@@ -32,5 +32,5 @@ function login() {
 
 function cadastro() {
     alert("Cadastrado com sucesso!");
-    window.location.href = "index.html";
+    window.location.href = "home.html";
 }
