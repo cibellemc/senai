@@ -20,9 +20,11 @@ import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { MaisVendidosComponent } from './mais-vendidos/mais-vendidos.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 @NgModule({
-  declarations: [AppComponent, InicioComponent, LoginComponent, MenuComponent, RodapeComponent],
+  declarations: [AppComponent, InicioComponent, LoginComponent, MenuComponent, RodapeComponent, MaisVendidosComponent, ProdutoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

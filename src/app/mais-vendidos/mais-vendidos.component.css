@@ -1,0 +1,29 @@
+div {
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+.grid-produtos {
+    flex-direction: row;
+    width: 100%;
+    
+    app-produtos {
+        width: 33%;
+    }
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+  
+  app-produto {
+    width: 33.33%; /* Cada app-produto ocupa 33% da largura */
+    box-sizing: border-box; /* Inclui a largura e a borda no cálculo do tamanho total */
+  }

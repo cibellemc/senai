@@ -61,10 +61,11 @@ button {
   background: none;
 }
 
-#categorias {
+#categorias, #mais-vendidos, #novidades {
   display: flex;
+  padding: 1rem;
+  width: 100vw;
 
-  min-height: 600px;
   gap: 2rem;
 
   color: black;
@@ -92,7 +93,7 @@ button {
     z-index: 1; /* Define um valor maior de z-index para a span */
 
     color: white; /* Opcional: define a cor do texto para garantir visibilidade */
-    background-color: rgba(194, 194, 194, 0.388);
+    background-color: rgba(187, 187, 187, 0.5);
     
     padding: 1rem;
     border-radius: 5px;

@@ -1,0 +1,28 @@
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(187, 187, 187, 0.07);
+    color: black;
+    padding: 2rem;
+    height: 300px;
+
+    .produto-img {
+        height: 50%;
+        object-fit: contain;
+    }
+}
+
+.adicionar {
+    display: flex;
+    justify-content: end;
+}
+
+.estrelas {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 50%;
+    }
+}
