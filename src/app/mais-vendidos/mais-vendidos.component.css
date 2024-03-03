@@ -8,7 +8,7 @@ div {
 
 .grid-produtos {
     flex-direction: row;
-    width: 100%;
+    width: 80vw;
     
     app-produtos {
         width: 33%;
