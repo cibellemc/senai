@@ -1,0 +1,56 @@
+/* Estilização do formulário de login */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px; /* Espaçamento entre o topo da página e o formulário */
+    margin-bottom: 50px; /* Espaçamento entre o formulário e o rodapé da página */
+  }
+  
+  form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo do título "Login" */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Espaçamento abaixo das etiquetas */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: gray;
+  }
+  
+  /* Estilização extra para ajustar o espaçamento entre os elementos */
+  br {
+    margin-bottom: 10px;
+  }
+  
