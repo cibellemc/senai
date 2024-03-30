@@ -1,0 +1,39 @@
+{
+  "produtos": [
+    {
+      "id": 0,
+      "produto": "produto",
+      "descricao": "produto",
+      "foto": "",
+      "preco": 200
+    },
+    {
+      "id": 0,
+      "produto": "",
+      "descricao": "",
+      "foto": "",
+      "preco": 0
+    },
+    {
+      "id": 0,
+      "produto": "2",
+      "descricao": "2",
+      "foto": "",
+      "preco": 2
+    },
+    {
+      "id": 0,
+      "produto": "produto1",
+      "descricao": "produto 1",
+      "foto": "",
+      "preco": 0
+    },
+    {
+      "id": 0,
+      "produto": "",
+      "descricao": "",
+      "foto": "",
+      "preco": 0
+    }
+  ]
+}

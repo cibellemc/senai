@@ -1,9 +1,15 @@
 <div>
-  <span class="titulo">{{valor}} </span>
-  <div class="grid-produtos">
-    <app-produto url_img="../../assets/img/Produto 4.png"></app-produto>
-    <app-produto url_img="../../assets/img/Produto 5.png"></app-produto>
-    <app-produto url_img="../../assets/img/Produto 6.png"></app-produto>
+  <span class="titulo">{{ valor }} </span>
+  <div class="grid-produtos" *ngFor="let produto of produtos">
+    <div class="produto">
+      <span class="adicionar"><mat-icon>add_circle_outline</mat-icon></span>
+      <img class="produto-img" src={{produto.foto}} alt="" />
+      <span class="estrelas">
+        <img src="../../assets/img/images-removebg-preview1 1.png" alt="" />
+      </span>
+      <span>{{produto.produto}}</span>
+      <span>{{produto.descricao}}</span>
+      <span>{{produto.preco | currency: 'BRL'}}</span>
+    </div>
   </div>
 </div>
-  
