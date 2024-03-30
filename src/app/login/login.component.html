@@ -3,14 +3,15 @@
       <h2>Login</h2>
         <form>
               <label for="inputUsuario">Usuário</label>
-              <input type="text" class="form-control" id="inputUsuario" placeholder="email@example.com.br">
+              <input type="text" class="form-control" [(ngModel)]="usuario" [ngModelOptions]="{standalone: true}" id="inputUsuario" placeholder="email@example.com.br">
               <br>
 
               <label for="inputSenha2">Senha</label>
-              <input type="password" class="form-control" id="inputSenha2" placeholder="senha@1234">
+              <input type="password" class="form-control" [(ngModel)]="senha" [ngModelOptions]="{standalone: true}" id="inputSenha2" placeholder="senha@1234">
 
               <br>
-              <button type="submit" routerLink="/inicio" routerLinkActive="active">Entrar</button>
+              <button type="submit" class="btn btn-primary mb-3" (click)="fazerLogin()">Login</button>
+              <!--<button type="submit" routerLink="/inicio" routerLinkActive="active">Entrar</button>-->
           </form>
     </section>
 </main>

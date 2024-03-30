@@ -26,6 +26,7 @@ import { AtualizaProdutoComponent } from './restrito/atualiza-produto/atualiza-p
 import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-produto.component';
 import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
 import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
+import { MaisVendidosComponent } from './mais-vendidos/mais-vendidos.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.co
     AtualizaProdutoComponent,
     CadastroProdutoComponent,
     ListaProdutoComponent,
-    MenuRestritoComponent
+    MenuRestritoComponent,
+    MaisVendidosComponent
   ],
   imports: [
     BrowserModule,

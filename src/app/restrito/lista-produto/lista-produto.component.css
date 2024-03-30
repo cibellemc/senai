@@ -1,4 +1,50 @@
-table img {
-  height: 50px;
-  width: 50px;
-}
+/* style.css */
+
+/* Estilo para a tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilo para o cabeçalho da tabela */
+  .table th {
+    background-color: #f8f9fa; /* Cor de fundo cinza claro */
+    color: #212529; /* Cor do texto preto */
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Estilo para as células da tabela */
+  .table td {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6; /* Linha divisória entre as células */
+  }
+  
+  /* Estilo para a linha ímpar da tabela (alternância de cores) */
+  .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Cor de fundo cinza mais claro */
+  }
+  
+  /* Estilo para os botões de editar e excluir */
+  .btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545; /* Cor de fundo vermelho */
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8; /* Diminui a opacidade ao passar o mouse */
+  }
+  

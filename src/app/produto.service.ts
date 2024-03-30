@@ -8,6 +8,8 @@ import { Produto } from "./models/Produto.models";
 })
 export class ProdutoService {
   private url = "http://localhost:3000/produtos";
+  private ultimoId: number = 0; // Inicializa o último ID como 0
+
   constructor(private _httpClient: HttpClient) {}
 
   getProduto(id: any): Observable<Produto> {
@@ -20,6 +22,8 @@ export class ProdutoService {
   }
 
   cadastrarProduto(produto: Produto): Observable<Produto[]> {
+    this.ultimoId++
+    produto.id = this.ultimoId;
     return this._httpClient.post<Produto[]>(this.url, produto);
   }
 
